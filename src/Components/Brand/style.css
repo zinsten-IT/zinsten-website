@@ -1,0 +1,12 @@
+.brand-main{
+    margin-bottom: 70px;
+}
+.brand-img {
+    padding: 20px 0;
+}
+@media(max-width:991px){
+    .brand-main {
+        margin-bottom: 45px;
+    }
+
+}

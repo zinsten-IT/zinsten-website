@@ -1,0 +1,170 @@
+.consultation-area {
+    z-index: 1;
+    position: relative;
+}
+
+.consultation {
+    background: #CE214F;
+    padding: 68px 66px;
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+
+.consultation-single-box {
+    display: flex;
+    position: relative;
+}
+
+.consultation-single-box::before {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 1px;
+    background: #fff;
+    right: -15px;
+    top: 0px;
+}
+
+.consultation-content {
+    margin-left: 28px;
+    text-align: left;
+}
+
+h5.consultation-title {
+    color: #ffd6d6;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+span.consultation-text {
+    font-size: 36px;
+    color: #fdfdfd;
+    font-weight: 400;
+}
+
+.consultation-desc p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffd6d6;
+    text-align: left;
+}
+
+.consultation-area .dreamhub-btn {
+    text-align: right;
+}
+
+.consultation-area .dreamhub-btn a {
+    border: 1px solid #fff;
+}
+
+.consultation-area .dreamhub-btn a::before {
+    border-radius: 0;
+}
+
+.consultation-area .dreamhub-btn a:hover:before {
+    border: none;
+}
+
+.dreamhub-btn a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fcfcfc;
+    background: #CE214F;
+    font-size: 15px;
+    padding: 13px 35px 13px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+
+.dreamhub-btn a::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(.2, 1);
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.dreamhub-btn a:hover:before {
+    opacity: 1;
+    transform: scale(1);
+    border: 1px solid #CE214F;
+}
+
+.dreamhub-btn a:hover {
+    color: #CE214F;
+}
+
+@media(max-width:1200px) {
+    .consultation {
+        padding: 60px 33px;
+    }
+
+    span.consultation-text {
+        font-size: 28px;
+    }
+
+    h5.consultation-title {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .consultation-content {
+        margin-left: 18px;
+    }
+}
+
+@media(max-width:1024px) {
+    .consultation {
+        padding: 50px 10px;
+    }
+
+    h5.consultation-title {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    span.consultation-text {
+        font-size: 20px;
+    }
+
+    .dreamhub-btn a {
+        font-size: 15px;
+        padding: 11px 28px 11px;
+    }
+}
+
+@media(max-width:991px) {
+    .consultation {
+        margin-bottom: 45px;
+    }
+}
+@media(max-width:767px){
+    .consultation-main{
+        display: flex;
+        justify-content: center;
+    }
+    .consultation-single-box::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: #fff;
+        right: -15px;
+        top: auto;
+        bottom: 0;
+    }
+    .consultation-area .dreamhub-btn {
+        text-align: center;
+    }
+}

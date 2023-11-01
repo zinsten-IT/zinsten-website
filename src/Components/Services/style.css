@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+.services-main {
+    position: relative;
+    padding: 70px 0 100px;
+}
+.gradient-border {
+  --borderWidth: 5px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.services_tital {
+    font-size: 42px;
+    color: #000;
+    font-family: Rajdhani;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+.services_tital::before {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 4%;
+    background: #CE214F;
+}
+.services_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    width: 70%;
+    margin: auto;
+    padding: 9px 0 22px;
+    text-align: center;
+}  
+
+.services-content {
+    padding: 10px 10px;
+}
+.btn_main {
+    text-align: left;
+}
+
+.btn_main a {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.services-img img {
+    width: -webkit-fill-available;
+    border-radius: 5px 5px 0 0;
+}
+.services-main::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #FAE7EB;
+    z-index: -1;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+}
+@media(max-width:991px){
+    .services_tital {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .services_text {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 9px 0 22px;
+    }
+}

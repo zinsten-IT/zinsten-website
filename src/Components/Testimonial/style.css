@@ -1,0 +1,121 @@
+.slick-slide img {
+    display: block;
+    width: auto;
+    margin: auto;
+}
+
+.client_section {
+    margin-bottom: 70px;
+    /* background-image: url(http://localhost:3001/static/media/testimonial-bg.942c881bca1d04622cb2.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fae7eb;
+}
+
+.client_tital {
+    font-size: 42px;
+    color: #000000;
+    font-family: Rajdhani;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+.client_tital::before {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 4%;
+    background: #CE214F;
+
+}
+.lorem_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    margin: auto;
+    padding: 20px 0 22px;
+    text-align: center;
+}
+
+.client_img {
+    width: 130px;
+    height: 136px;
+    border-radius: 34px;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid #ce214f;
+}
+
+.box_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quick_icon {
+    width: 40px;
+    margin: auto;
+    padding-top: 30px;
+    height: auto;
+}
+
+.client_name {
+    font-size: 24px;
+    color: #ce214f;
+    font-weight: bold;
+    padding-left: 30px;
+    line-height: 25px;
+}
+.customer_text {
+    font-size: 14px;
+    color: #ce214f;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.carousel-indicators li {
+    display: none;
+}
+
+.carousel-indicators .active {
+    background-color: #2b2278;
+}
+.client_taital_right {
+    text-align: left;
+}
+@media(max-width:991px){
+    .client_tital {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .lorem_text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .client_section {
+        margin-bottom: 45px;
+    }
+}
+@media(max-width:768px){
+    .client_tital {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .client_section {
+        margin-bottom: 40px;
+    }
+}
