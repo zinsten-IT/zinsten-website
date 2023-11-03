@@ -7,7 +7,7 @@ import 'animate.css';
 import Fade from 'react-reveal/Fade';
 import { NavLink } from 'react-router-dom';
 
-const Services = () => {
+const Service = () => {
     return (
         <div className='services-main'>
             <div className="container">
@@ -66,4 +66,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Service

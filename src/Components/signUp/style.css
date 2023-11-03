@@ -1,0 +1,54 @@
+/* Style for the container that holds the form */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #fff;
+  }
+  
+  /* Style for form labels */
+  .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style for form inputs */
+  .form-control {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  /* Style for the "Show" and "Hide" button */
+  .show-hide-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .show-hide-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the Register button */
+  .register-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;
+  }
+  

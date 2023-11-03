@@ -22,23 +22,33 @@ const Header = () => {
     };
   }, []);
   return (
-    <div>
-        <header className={`header ${isSticky ? 'sticky' : ''}`}>
-      <div className="logo">
-      <img src={logo} alt="img" />
+    <div className='header-main'>
+      <div className='container'>
+        <div className='header-inner'>
+          <div className="logo">
+            <NavLink exact to="/">
+              <img src={logo} alt="img" />
+            </NavLink>
+          </div>
+          <nav className="menu">
+            <ul>
+              <li><NavLink exact to="/">Home</NavLink></li>
+              <li><NavLink to="/abouts">About</NavLink></li>
+              <li><NavLink to="/services">Services</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
+            </ul>
+
+          </nav>
+          {/* <div className="login-button">
+            <button>
+              <NavLink to="/login">Login</NavLink>
+            </button>
+          </div> */}
+
+        </div>
+
+
       </div>
-      <nav className="menu">
-      <ul>
-          <li><NavLink exact to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/services">Services</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-        </ul>
-      </nav>
-    </header>
-
-
-
     </div>
   )
 }

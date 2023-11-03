@@ -1,0 +1,116 @@
+
+.form-group {
+    margin-bottom: 1rem;
+}
+.btn-primary {
+    box-shadow: none;
+    color: #fff;
+    background-color: #0C5ADB;
+    border-color: transparent;
+}
+.btn-primary{
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .5rem 1.25rem;
+}
+
+
+.elementor{
+    padding-bottom: 50px;
+}
+.section-title{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    margin-bottom: 45px;
+}
+.section-title h5 {
+    color: #0c5adb;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0 0 15px;
+}
+.section-title h3 {
+    font-size: 39px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #232323;
+}
+.bar-main {
+    margin: 18px 0 35px;
+}
+.bar.bar-big {
+    height: 5px;
+    width: 90px;
+    background: #aec6ef;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 30px;
+}
+.bar.bar-big::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2.7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #0c5adb;
+}
+.section-title p {
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 18px;
+    width: 73%;
+    margin: 7px auto 0;
+}
+.icon-box {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #D0E5FB;
+    border-radius: 5px 5px 5px 5px;
+    padding: 30px 0px 40px 0px;
+}
+.icon-box .icon-box-content h2 {
+    color: #232323;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+.icon-box-icon i {
+    font-size: 40px;
+    color: #0c5adb;
+    display: inline-block;
+    text-align: center;
+}
+.elementor-section{
+    background-color: #EFF2F7;
+    padding: 60px;
+}
+.form-group input ,.form-message{
+    height: 54px;
+    background-color: #fff;
+    border-color: transparent;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    border: 1px solid #e6e6e6;
+    padding: 6px 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 5px;
+}
+.form-group textarea{
+    height: 120px;
+}
+.contact-main {
+    padding: 85px 0px 0px;
+}

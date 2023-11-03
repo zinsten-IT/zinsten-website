@@ -5,9 +5,9 @@ import Fade from 'react-reveal/Fade';
 import 'animate.css';
 import { NavLink } from 'react-router-dom';
 
-const About = () => {
+const Abouts = () => {
    return (
-      <div>
+      <div className='mt-5'>
          <div className="about_section layout_padding">
             <div className='container'>
                <div className="row">
@@ -45,4 +45,4 @@ const About = () => {
    )
 }
 
-export default About
+export default Abouts

@@ -1,39 +1,35 @@
-
+import React, { useState } from 'react'
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/header';
-import Home from './Components/Home';
-import About from './Components/about';
-import Service from './Components/Services';
-import Footer from './Components/Footer';
-import Consultation from './Components/consultation';
-import OurTeam from './Components/OurTeam';
-import Testimonial from './Components/Testimonial';
-import Brand from './Components/Brand';
+import Service from './Components/Service';
+import Login from './Components/Login';
 import { Routes, Route } from 'react-router-dom';
 import Contact from './Components/Contact'
+import Main from './Components/Main';
+import 'remixicon/fonts/remixicon.css';
+import SignUp from './Components/signUp';
+import Footer from './Components/Footer';
+import Abouts from './Components/Abouts';
+import Services from './Components/Services';
+
 function App() {
+
   return (
     <div className="App">
-        <Header />
-        
-      <Home />
-      <About />
-      <Service />
-      <Consultation />
-      <OurTeam />
-      <Testimonial />
-      <Brand />
-      <Footer />
-      <Contact/>
+      <Header />
       <Routes>
-          <Route path="/Home" exact element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
-          <Route path="/contact" element={<Contact />} />
-          </Routes>
-      
+        <Route path="/" exact element={<Main />} />
+        <Route path="/Home" exact element={<Main />} />
+        <Route path="/abouts" element={<Abouts/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp/>} />
+      </Routes>
+      <Footer />
+
 
     </div >
   );
